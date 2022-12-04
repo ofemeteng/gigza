@@ -1,0 +1,1 @@
+export const gigs = ['content manger', 'copy writing', 'frontEnd development', 'UI/UX daphics design', 'animation', 'data engineering', 'writer', 'full stack developer', 'android engineer', 'project manager'] 

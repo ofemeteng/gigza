@@ -1,0 +1,48 @@
+export const newProjects = [
+    {
+        name: 'Graphics design',
+        description: "I'm looking for someone who can handle a logo designing project. If you are interested, kindly send a message.",
+        skills: ['logo design', 'Brand/graphics design'],
+        client: 'raphael Benjamin',
+        time: '3 hours',
+        budget: 250,
+        id: 0,
+    },
+    {
+        name: 'Tech company pitch deck',
+        description: "I work for a tech start-up called MODCLUB, and we are looking to have our 15-page investor deck refreshed by a professional designer. We are looking for a clean and simple final product that is not overly designed. Timeline- asap.",
+        skills: ['Brand/graphics design'],
+        client: 'peter parker',
+        time: '3 hours',
+        budget: 500,
+        id: 1,
+    },
+    {
+        name: 'UI app design',
+        description: "Hi, I'm looking for a designer to help me create 20 screen UI designs for Android and iOS. Kindly send your portfolio and your quote for this job. Thanks!",
+        skills: ['mobile design', 'UI/UX design'],
+        client: 'andrew liver',
+        time: '3 hours',
+        budget: 1500,
+        id: 2,
+    },
+    {
+        name: 'Website in webflow',
+        description: "We have a branding package and need a website built in webflow. Looking for someone with a design eye who can help make our branding package come to life.",
+        skills: ['web design'],
+        client: 'chioma ibe',
+        time: '3 hours',
+        budget: 2500,
+        id: 3,
+    },
+    {
+        name: 'Graphics design',
+        description: "I'm looking for someone who can handle a logo designing project. If you are interested, kindly send a message.",
+        skills: ['logo design', 'Brand/graphics design'],
+        client: 'nonye sophia',
+        time: '3 hours',
+        budget: 250,
+        id: 4,
+    },
+]
+

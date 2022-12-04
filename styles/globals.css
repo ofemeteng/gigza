@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "Satoshi-Regular";
+		src: url("../public/asset/font/Satoshi/Satoshi-Regular.woff2")
+				format("woff2"),
+			url("../public/asset/font/Satoshi/Satoshi-Regular.woff") format("woff"),
+			url("../public/asset/font/Satoshi/Satoshi-Regular.ttf") format("truetype");
+		font-weight: 400;
+		font-display: swap;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Satoshi-Medium";
+		src: url("../public/asset/font/Satoshi/Satoshi-Medium.woff2")
+				format("woff2"),
+			url("../public/asset/font/Satoshi/Satoshi-Medium.woff") format("woff"),
+			url("../public/asset/font/Satoshi/Satoshi-Medium.ttf") format("truetype");
+		font-weight: 500;
+		font-display: swap;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Satoshi-Bold";
+		src: url("../public/asset/font/Satoshi/Satoshi-Bold.woff2") format("woff2"),
+			url("../public/asset/font/Satoshi/Satoshi-Bold.woff") format("woff"),
+			url("../public/asset/font/Satoshi/Satoshi-Bold.ttf") format("truetype");
+		font-weight: 700;
+		font-display: swap;
+		font-style: normal;
+	}
+}
+
+@layer components {
+	.layout-container {
+		@apply w-11/12 mx-auto;
+	}
+
+	.skills {
+		@apply border border-[#E8E8EF] px-[14px] py-[7px] font-satoshiMedium text-b4 text-[13px] leading-[18px] capitalize;
+	}
+
+	.error {
+		@apply border border-red-500;
+	}
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.even-box {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		#6159e8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/* The checkbox-container */
+.checkbox-container {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 24px;
+	width: 24px;
+	/* border: 1px solid #bdbdbd;
+	border-radius: 2px; */
+	border-radius: 4px;
+	background-color: #eee;
+	border: 1px solid #d0d5dd;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a green background */
+.checkbox-container input:checked ~ .checkmark {
+	background-color: #4f46e5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+	left: 7px;
+	top: 2px;
+	width: 7px;
+	height: 15px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* radio css */
+
+input[type="radio"]:checked + label:after {
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 11px;
+	left: 9px;
+	content: " ";
+	display: block;
+	background: #4f46e5;
+}
